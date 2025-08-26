@@ -1,0 +1,109 @@
+* { 
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body { 
+    background-color: #eee;
+    height: 3000px;
+}
+
+::-webkit-scrollbar { 
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb { 
+    background-color: #ddd;
+} 
+
+::-webkit-scrollbar-track { 
+    background-color: #123;
+} 
+
+button { 
+    background-color: #123;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    border: 1px solid transparent;
+    outline: none;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:hover { 
+    border: 1px solid #123;
+    color: #123;
+    background-color: #eee;
+}
+
+ul {
+    background-color: #ddd;
+    width: 600px;
+    padding: 20px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    list-style: none;
+    margin: 30px auto;
+}
+
+ul li {
+    opacity: 0.5;
+    width: 100px;
+    height: 100px;
+}
+
+ul li:hover,
+ul li.active { 
+    opacity: 1;
+}
+
+ul li:nth-child(1) {
+    background-color: red;
+}
+
+ul li:nth-child(2) {
+    background-color: green;
+}
+
+ul li:nth-child(3) {
+    background-color: blue;
+}
+
+ul li:nth-child(4) {
+    background-color: black;
+}
+
+.one { 
+    background-color: #ddd;
+    width: 600px;
+    margin: 30px auto;
+    height: 300px;
+}
+
+label { 
+    display: block;
+    margin: 20px 0;
+}
+
+.parent { 
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+@media (max-width:767px) {
+    .one { 
+        width: 98%;
+    }
+
+    ul { 
+        width: 98%;
+    }
+}
